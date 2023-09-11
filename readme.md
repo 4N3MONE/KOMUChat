@@ -24,49 +24,54 @@ src : 데이터 출처 사이트
 
 ## getting start with KoBART
 
-*** you need to check requirements.txt ***  
-also, you need to move to code repository of KoBART
+*** requirements.txt를 참고 부탁드립니다***  
+KoBART 폴더로 이동하기  
 ```cd KOMUChat/kobart```  
 
 ### let's train!
 ```sh bart_comuchat_job.sh ```  
-or you may run .py file  
+.py 파일로 직접 돌리는 것도 가능합니다.  
 ```python kobart_chit_chat.py ```  
 
-if you want to train community's own data(ins)..  
+한 커뮤니티만의 데이터로 학습을 진행하고 싶다면(예: 인스티즈)..  
 ```sh bart_comu_ins_job.sh```  
 
 ### let's chat!
 ```python chat.py```
 
 ## getting start with KoGPT
-*** you need to check requirements.txt ***  
-also, you need to move to code repository of KoGPT  
+*** requirements.txt를 참고 부탁드립니다. ***  
+KoGPT폴더로 이동해주세요.  
 ```cd KOMUChat/GPT_ForTraining```  
 
 ### let's train!
 ```sh comuchat_gpt_job.sh ```  
-or you may run .py file  
+.py을 사용하여 직접 학습하는 것도 가능합니다.
 ```python train_torch.py ```  
 
-if you want to train community's own data(ins)..  
+한 커뮤니티만의 데이터로 학습을 진행하고 싶다면(예: 인스티즈)..   
 ```sh comu_ins_gpt_job.sh```  
 
+### let's chat!
+.py파일의 --chat 인자를 변경해주면 됩니다.
+```python train_torch.py --chat True ```
+
 ## getting start with T5
-first you need to move to code repository of t5  
+KoGPT폴더로 이동해주세요  
 ```cd KOMUChat/pko_t5```  
-if you want to make an virtual environment...
+가상환경을 구축하여 학습을 진행할 수도 있습니다.  
 ```conda env create -n t5 python=3.8 -f requirements.txt```  
 
 ### let's train!
-if you want to change hyper-parameter for training,  
-```python train.py --num_train_epochs 5 --train_batch_size 16 ...```  
-or you may change data to train(instiz, fmkorea)  
+하이퍼파라미터 조정하기  
+```python train.py --num_train_epochs 5 --train_batch_size 16 ...```   
+
+한 커뮤니티만의 데이터로 학습을 진행하고 싶다면..   
 ```python train.py --train_path ../data/comuchat_ins_train.csv --test_path  ../data/comuchat_ins_valid.csv```
 
 ### let's chat!
 ```python chat.py```  
-you may type "false" to stop chatting  
+채팅을 멈추고 싶다면 'false'를 입력하면 됩니다.  
 
 ## 인용
 ```
