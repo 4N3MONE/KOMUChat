@@ -1,4 +1,5 @@
 pandas
 tqdm
-transformers
 torch
+transformers
+transformers[pytorch]
