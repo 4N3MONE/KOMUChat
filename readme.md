@@ -42,7 +42,7 @@ if you want to change hyper-parameter for training,
 or you may change data to train(instiz, fmkorea)  
 ```python train.py --train_path ../data/comuchat_ins_train.csv --test_path  ../data/comuchat_ins_valid.csv```
 
-### 3) let's chat!
+#### 3) let's chat!
 ```python chat.py```  
 you may type "false" to stop chatting  
 
