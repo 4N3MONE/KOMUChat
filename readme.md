@@ -22,14 +22,36 @@ src : 데이터 출처 사이트
 | love       | #청자#들아 연애는 갑자기 시작한다고 생각해?    | 나는 진자 신기한 게 연애에 대한 기대가 떨어지면 하고 있더랔ㅋㅋㅋ      | instiz     |
 
 
-## getting start with KoGPT
-```
-
-```
 ## getting start with KoBART
-```
 
-```
+*** you need to check requirements.txt ***  
+also, you need to move to code repository of KoBART
+```cd KOMUChat/kobart```  
+
+### let's train!
+```sh bart_comuchat_job.sh ```  
+or you may run .py file  
+```python kobart_chit_chat.py ```  
+
+if you want to train community's own data(ins)..  
+```sh bart_comu_ins_job.sh```  
+
+### let's chat!
+```python chat.py```
+
+## getting start with KoGPT
+*** you need to check requirements.txt ***  
+also, you need to move to code repository of KoGPT  
+```cd KOMUChat/GPT_ForTraining```  
+
+### let's train!
+```sh comuchat_gpt_job.sh ```  
+or you may run .py file  
+```python train_torch.py ```  
+
+if you want to train community's own data(ins)..  
+```sh comu_ins_gpt_job.sh```  
+
 ## getting start with T5
 first you need to move to code repository of t5  
 ```cd KOMUChat/pko_t5```  
