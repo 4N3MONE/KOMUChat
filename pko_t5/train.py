@@ -27,9 +27,9 @@ if __name__ == '__main__':
                                                 help='evaluation, logging, saving step for training')                                            
     parser.add_argument('--model_name', default='paust/pko-t5-base', type=str,
                                                 help='model name for saving')
-    parser.add_argument('--train_path', default='./data/comuchat_train.csv', type=str,
+    parser.add_argument('--train_path', default='../data/comuchat_train.csv', type=str,
                                                 help='dataset path')
-    parser.add_argument('--test_path', default='./data/comuchat_test.csv', type=str,
+    parser.add_argument('--test_path', default='../data/comuchat_valid.csv', type=str,
                                                 help='dataset path')
     parser.add_argument('--model_path', default='./model', type=str,
                                                 help='model path for saving')
