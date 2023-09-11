@@ -22,28 +22,18 @@ src : 데이터 출처 사이트
 | love       | #청자#들아 연애는 갑자기 시작한다고 생각해?    | 나는 진자 신기한 게 연애에 대한 기대가 떨어지면 하고 있더랔ㅋㅋㅋ      | instiz     |
 
 
-## 문서 구조
-```
-├──Github
-│  │  readme.md
-│  │  LICSENCE.md
-│  ├─data
-│  │      komuchat.csv
-│  ├─GPT_ForTraining
-│  │       train_torch.py
-│  │       02
-│  ├─KoBart
-│  │       chat.py
-│  │       data.py
-│  │       model.py
-│  │       train.py
-│  ├─pko-t5
-│  │       chat.py
-│  │       data.py
-│  │       model.py
-│  │       train.py
+## getting start with KoGPT
 ```
 
+```
+## getting start with KoBART
+```
+
+```
+## getting start with T5
+```
+
+```
 
 ## 인용
 ```
