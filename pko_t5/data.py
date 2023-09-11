@@ -1,6 +1,5 @@
 #필요 라이브러리 임포트
 import pandas as pd
-from sklearn.model_selection import train_test_split
 
 # 데이터 불러오기
 def load_data(train_path, test_path):    
