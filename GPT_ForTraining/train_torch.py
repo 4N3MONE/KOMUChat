@@ -330,8 +330,8 @@ if __name__ == "__main__":
     tokenizer.add_tokens(["#화자#", "#청자#", "#(남자)청자#", "#(남자)화자#", "#(여자)청자#", "#(여자)화자#"])
 
     
-    dm = ChatDataModule('data/' + args.task_prefix + '_train.csv',
-                        'data/' + args.task_prefix + '_valid.csv',
+    dm = ChatDataModule('./data/' + args.task_prefix + '_train.csv',
+                        './data/' + args.task_prefix + '_valid.csv',
                         tokenizer,
                         max_seq_len=args.max_seq_len,
                         num_workers=args.num_workers)
