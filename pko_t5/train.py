@@ -43,8 +43,9 @@ if __name__ == '__main__':
     # tokenizer에 넣기
     training_set = prepare_data(df_train, tokenizer, args)
     test_set = prepare_data(df_test, tokenizer, args)
+    
     # set device
-    device = 'cuda:3' if torch.cuda.is_available() else 'cpu' #torch.device('cuda:3')
+    device = 'cuda:0' if torch.cuda.is_available() else 'cpu' #torch.device('cuda:3')
     
     model.to(device)
     
