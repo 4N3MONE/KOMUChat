@@ -29,7 +29,7 @@ if __name__ == '__main__':
                                                 help='model name for saving')
     parser.add_argument('--base_path', default='./data/comuchat.csv', type=str,
                                                 help='dataset path')
-    parser.add_argument('--model_path', default='./pko_t5_experiment1', type=str,
+    parser.add_argument('--model_path', default='./model', type=str,
                                                 help='model path for saving')
     args = parser.parse_args()
 
