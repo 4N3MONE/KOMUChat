@@ -32,17 +32,17 @@ src : 데이터 출처 사이트
 ```
 ## getting start with T5
 first you need to move to code repository of t5  
-```cd KOMUChat/pko_t5```
-#### 1) if you want to make an virtual environment...
+```cd KOMUChat/pko_t5```  
+if you want to make an virtual environment...
 ```conda env create -n t5 python=3.8 -f requirements.txt```  
 
-#### 2) let's train!
+### let's train!
 if you want to change hyper-parameter for training,  
 ```python train.py --num_train_epochs 5 --train_batch_size 16 ...```  
 or you may change data to train(instiz, fmkorea)  
 ```python train.py --train_path ../data/comuchat_ins_train.csv --test_path  ../data/comuchat_ins_valid.csv```
 
-#### 3) let's chat!
+### let's chat!
 ```python chat.py```  
 you may type "false" to stop chatting  
 
