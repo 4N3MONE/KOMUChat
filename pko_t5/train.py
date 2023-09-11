@@ -58,7 +58,7 @@ if __name__ == '__main__':
     training_args = Seq2SeqTrainingArguments(
         output_dir = args.model_path,
         save_total_limit=1,
-        early_stopping_patience=5,
+        #early_stopping_patience=5,
         evaluation_strategy = "epoch",
         num_train_epochs=args.num_train_epochs,
         per_device_train_batch_size=args.train_batch_size,
@@ -67,7 +67,7 @@ if __name__ == '__main__':
         weight_decay=args.wd,
         warmup_steps=3000,
         logging_steps=1000,
-        save_strategy="no",
+        save_strategy="epoch",
         load_best_model_at_end=True,
         metric_for_best_model="eval_loss", 
     )
