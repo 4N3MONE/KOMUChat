@@ -23,6 +23,7 @@ src : 데이터 출처 사이트
 
 
 ## 문서 구조
+```sh
 ├──Github
 │  │  readme.md
 │  │  LICSENCE.md
@@ -41,7 +42,7 @@ src : 데이터 출처 사이트
 │  │       data.py
 │  │       model.py
 │  │       train.py
-
+```
 
 
 ## 인용
