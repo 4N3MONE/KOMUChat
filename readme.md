@@ -27,6 +27,8 @@ src : 데이터 출처 사이트
 *** requirements.txt를 참고 부탁드립니다***  
 KoBART 폴더로 이동하기  
 ```cd KOMUChat/kobart```  
+requirments.txt안에 있는 패키지 설치
+```pip install -r requirements.txt```
 
 ### let's train!
 ```sh bart_comuchat_job.sh ```  
