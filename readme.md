@@ -33,7 +33,7 @@ requirments.txt안에 있는 패키지 설치
 ### let's train!
 ```sh bart_comuchat_job.sh ```  
 .py 파일로 직접 돌리는 것도 가능합니다.  
-```python kobart_chit_chat.py ```  
+```python kobart_chit_chat.py```    
 
 한 커뮤니티만의 데이터로 학습을 진행하고 싶다면(예: 인스티즈)..  
 ```sh bart_comu_ins_job.sh```  
